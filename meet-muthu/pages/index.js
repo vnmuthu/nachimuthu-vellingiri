@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>meet-muthu</title>
+        <title>Nachimuthu Vellingiri</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -59,17 +59,17 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          color: #000;
+          color: #1d1d1d;
           background-color: #ffc244;
         }
 
         img.profile {
           width: 70%;
-          margin-left: 60px;
+          margin-left: 65px;
         }
 
         main {
-          padding: 4rem 0;
+          padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -175,7 +175,23 @@ export default function Home() {
           height: 1em;
         }
 
+        .footer-bg {
+          width:100%;
+        }
+
         @media (max-width: 600px) {
+          .title {
+            font-size: 2rem;
+          }
+
+          h2 {
+            font-size: 1.25rem;
+          }
+
+          img.profile {
+            margin-left: 40px;
+          }
+          
           .grid {
             width: 100%;
             flex-direction: column;
