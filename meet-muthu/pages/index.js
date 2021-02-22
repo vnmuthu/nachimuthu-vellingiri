@@ -9,17 +9,20 @@ export default function Home() {
       </Head>
 
       <main>
+        <figure>
+          <img className="profile" src="/images/profile.png" alt="Nachimuthu Vellingiri"></img>
+        </figure>
         <h1 className="title">
-          Nachimuthu <a href="#">Vellingiri</a>
+          Nachimuthu <a href="javascript:void(0);">Vellingiri</a>
         </h1>
 
         <h2>Senior Frontend Developer</h2>
 
         <p className="description">
-          <code>A creative and dependable frontend Developer with 10+ years industry experience in building responsive web applications. A solution-driven professional excelling in highly collaborative work environment, finding solutions to challenges and focused on customer satisfaction.</code>
+        An Analytic Thinker. Naturally curious, have a thirst for knowledge. Even the most sophisticated piece of software will only have its full effect when the people using it can understand it—this is the idea expressed by the schedule, implementation and integration of my projects.
         </p>
 
-        <div className="grid">
+        {/* <div className="grid">
           <a href="#" className="card">
             <h3>Work Experience &rarr;</h3>
             <p>Find my professional experience</p>
@@ -45,7 +48,7 @@ export default function Home() {
             <h3>Accompliments &rarr;</h3>
             <p>Awards</p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <style jsx>{`
@@ -56,10 +59,17 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          color: #000;
+          background-color: #ffc244;
+        }
+
+        img.profile {
+          width: 70%;
+          margin-left: 60px;
         }
 
         main {
-          padding: 5rem 0;
+          padding: 4rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -92,7 +102,7 @@ export default function Home() {
         }
 
         .title a {
-          color: #0070f3;
+          color: #00a082;
           text-decoration: none;
         }
 
@@ -114,8 +124,10 @@ export default function Home() {
         }
 
         .description {
+          width: 70%;
+          font-size: 1rem;
           line-height: 1.5;
-          font-size: 1.5rem;
+          color: #444;
         }
 
         code {
