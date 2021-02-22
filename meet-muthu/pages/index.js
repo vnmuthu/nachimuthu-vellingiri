@@ -109,7 +109,8 @@ export default function Home() {
         .title a:hover,
         .title a:focus,
         .title a:active {
-          text-decoration: underline;
+          color: #000;
+          text-decoration: none;
         }
 
         .title {
@@ -128,15 +129,6 @@ export default function Home() {
           font-size: 1rem;
           line-height: 1.5;
           color: #444;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
         .grid {
