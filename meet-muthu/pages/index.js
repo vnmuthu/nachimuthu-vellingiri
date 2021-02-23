@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -9,46 +11,30 @@ export default function Home() {
       </Head>
 
       <main>
+        <nav>
+          <Link href="/"><a>Home</a></Link>
+          <Link href="/about"><a>About</a></Link>
+          <Link href="/work"><a>Work</a></Link>
+          <Link href="/portfolio"><a>Portfolio</a></Link>
+          <Link href="/awards"><a>Awards + Mentions</a></Link>
+          <Link href="/contact"><a>Contact</a></Link>
+        </nav>
         <figure>
-          <img className="profile" src="/images/profile.png" alt="Nachimuthu Vellingiri"></img>
+          <Image 
+          src="/images/profile.png" 
+          height={250} 
+          width={250} 
+          alt="Nachimuthu Vellingiri" />
         </figure>
         <h1 className="title">
-          Nachimuthu <a href="javascript:void(0);">Vellingiri</a>
+          Nachimuthu <Link href="/about"><a>Vellingiri</a></Link>
         </h1>
 
         <h2>Senior Frontend Developer</h2>
 
         <p className="description">
-        An Analytic Thinker. Naturally curious, have a thirst for knowledge. Even the most sophisticated piece of software will only have its full effect when the people using it can understand it—this is the idea expressed by the schedule, implementation and integration of my projects.
+        An Analytic Thinker. Naturally curious, have a thirst for knowledge. Even the most sophisticated piece of software will only have its full effect when the people using it can understand it - this is the idea expressed by the schedule, implementation and integration of my projects.
         </p>
-
-        {/* <div className="grid">
-          <a href="#" className="card">
-            <h3>Work Experience &rarr;</h3>
-            <p>Find my professional experience</p>
-          </a>
-
-          <a href="#" className="card">
-            <h3>Portofolio &rarr;</h3>
-            <p>Find my contributions to brands</p>
-          </a>
-
-          <a
-            href="#"
-            className="card"
-          >
-            <h3>Testimonials &rarr;</h3>
-            <p>Testimonials</p>
-          </a>
-
-          <a
-            href="#"
-            className="card"
-          >
-            <h3>Accompliments &rarr;</h3>
-            <p>Awards</p>
-          </a>
-        </div> */}
       </main>
 
       <style jsx>{`
@@ -60,21 +46,30 @@ export default function Home() {
           justify-content: center;
           align-items: center;
           color: #1d1d1d;
-          background-color: #ffc244;
-        }
-
-        img.profile {
-          width: 70%;
-          margin-left: 65px;
+          background-color: #ffd278; 
         }
 
         main {
-          padding: 5rem 0;
+          padding: 2rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        nav {
+          padding: 0 0 5rem;
+        }
+
+        nav a {
+          padding: 0 1.25rem;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+
+        nav a:hover {
+          color: #00a082;
         }
 
         footer {
@@ -125,10 +120,10 @@ export default function Home() {
         }
 
         .description {
-          width: 70%;
+          width: 60%;
           font-size: 1rem;
           line-height: 1.5;
-          color: #444;
+          color: #333;
         }
 
         .grid {
