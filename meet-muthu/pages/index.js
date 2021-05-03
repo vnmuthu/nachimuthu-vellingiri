@@ -30,10 +30,10 @@ export default function Home() {
           Nachimuthu <Link href="/about"><a>Vellingiri</a></Link>
         </h1>
 
-        <h2>Senior Frontend Developer</h2>
+        <h2>Senior Front-End Developer</h2>
 
         <p className="description">
-        An Analytic Thinker. Naturally curious, have a thirst for knowledge. Even the most sophisticated piece of software will only have its full effect when the people using it can understand it - this is the idea expressed by the schedule, implementation and integration of my projects.
+        Creative and dependable developer with 11+ years of industry experience in successful enterprise software companies with a sense of responsibility and leadership qualities. Designed and developed enterprise-level content management software for the Banking and Automobile industry.
         </p>
       </main>
 
