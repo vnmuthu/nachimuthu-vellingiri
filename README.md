@@ -1,2 +1,2 @@
 # Nachimuthu-Vellingiri
-What he does: Frontend Development
+What he does: Frontend Development, Travelling, Gardening
